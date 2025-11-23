@@ -1,7 +1,5 @@
-h1
-{
-    color: brown;
-    background-color: chartreuse;
-    padding: center;
-
+h1{
+    color: blue;
+    background-color: brown;
+    text-align: end;
 }
