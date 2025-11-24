@@ -10,20 +10,41 @@
 </head>
 <body style="background-color:darkgoldenrod">
     <h1><marquee>THIS IS SRINIVASA REDDY VENNA</marquee></h1>
-    <p id="a"></p>
-    <label for="">Date</label>
-    <input type="button" value="submit" id="A">
-    <script>
-        document.getElementById("a").innerHTML="Hey Users here I joined as a JS"
+        <label for="">date</label>
+        <input type="submit" value="Date" onclick="srinu()">
+        <label for="">month</label>
+        <input type="submit" value="month" onclick="srinu1()">
+        <label for="">year</label>
+        <input type="submit" value="year" onclick="srinu2()">
+        <label for="">day</label>
+        <input type="submit" value="day" onclick="srinu3()"><br><br>
+        <button onclick="myFunction()" style="background-color: blue;">Click Me</button>
+        <h2 id="demo">The text will change after clicking the button.</h2>
+        <script src="new.js"></script>
+        <p id="ss"></p>
+        <script>
+            document.getElementById("ss").innerHTML="here you go for the another mode"
         function srinu()
         {
-            window.alert('are you sure to move forward')
-            var a=new date()
-            var b=a.date()
-            document.write(b)
+           var b=new Date()
+           window.alert("Todays date is"+b.getDate())
         }
-        srinu()
-    </script>
+        function srinu1()
+        {
+           var b=new Date()
+           window.alert("Todays date is"+b.getMonth())
+        }
+        function srinu2()
+        {
+            var c=new Date()
+            window.alert("year is"+c.getFullYear())
+        }
+        function srinu3()
+        {
+            var d=new Date()
+            window.alert("day is"+d.getDay())
+        }
+                </script>
     <center>
     <fieldset style="color: black; border: 100px; margin: 20px; padding: 20px;"><legend>Student Registration Form</legend>
     <table><tr><td>
